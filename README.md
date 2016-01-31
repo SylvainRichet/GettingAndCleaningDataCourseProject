@@ -31,7 +31,7 @@ Project artifacts
 -----------------
 
 1. This **README** file acts as so called **recipe** component in the process of providing tidy data.
-2. A **coodbook** file is also provided in markdown format.
+2. A **CodeBook** file is also provided in markdown format.
 3. The `run_analysis.R` is the R script responsible for getting, cleaning and providing *tidy data sets* from given raw data zip file.
 
 
@@ -39,7 +39,7 @@ Steps to follow
 -----------------
 
 1. Step 1 : clone this repository on your local desktop
-2. Step 2 : get in the directory of your clone, open the **R console** (just type : > R ) and run the script `run_analysis.R`
+2. Step 2 : get in the directory of your clone, open the **R console** (just type : > R ) and run the script with the command`source("run_analysis.R")`
 3. Step 3 : jump to `./tidy-data` directory : **tidy data sets** have been generated here.
 
 Enjoy !
