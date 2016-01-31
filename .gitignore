@@ -1,0 +1,7 @@
+# R caches
+.Rproj.user
+.Rhistory
+.RData
+
+# misc others
+.httr-oauth
