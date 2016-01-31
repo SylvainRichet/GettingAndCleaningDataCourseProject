@@ -8,6 +8,7 @@
 # these libraries will be used
 library(data.table)
 library(reshape2)
+library(dplyr)
 
 # Directories
 rawDataDir <- file.path(getwd(), "raw-data")
@@ -121,7 +122,7 @@ dtDatas$Axis <- factor(m2 %*% m1, labels=c(NA, "X", "Y", "Z"))
 
 # Finally 
 setkey(dtDatas, subject, activity, Jerk, Magnitude, Variable, Source, Acceleration, Domain, Axis)
-tidyDatas <- dtDatas[, by=key(dtDatas)]
+tidyDatas <- select(dtDatas, subject, activity, Jerk, Magnitude, Variable, Source, Acceleration, Domain, Axis )
 tidyDatasAvg <- dtDatas[, list(count = .N, average = mean(value)), by=key(dtDatas)]
 
 # Write both tidy data sets into dedicated directory
